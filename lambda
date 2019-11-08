@@ -1,0 +1,37 @@
+ctools import reduce
+
+def cube(x):
+    return x*x*x
+
+g=lambda y:y*y*y
+
+print(g(7))
+print(cube(5))
+
+#lambda with filter function
+
+l=[2,6,5,3,9,10]
+newlist=list(filter(lambda y:(y%2==0),l))
+print(newlist)
+
+#lambda with Map function
+
+mappedList=list(map(lambda x:x*2,l))
+print(mappedList)
+
+#lambda with reduce function
+
+sum=reduce(lambda x,y:x+y,l)
+print(sum)
+
+# sorting of a list of dictionaries
+lis = [{ "name" : "Nandini", "age" : 20},
+{ "name" : "Manjeet", "age" : 20 },
+{ "name" : "Nikhil" , "age" : 19 }]
+print(sorted(lis,key=lambda x:x['age']))
+
+print(sorted(lis,key=lambda y:y['age'],reverse=True))
+
+# sorting by both name and age
+
+print(sorted(lis,key=lambda y:(y['age'],y['name'])))
