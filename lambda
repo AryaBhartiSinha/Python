@@ -1,4 +1,5 @@
 # Learning git so this comment 
+#Merging conflict update 2
 ctools import reduce
 
 def cube(x):
