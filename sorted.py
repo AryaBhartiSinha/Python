@@ -1,3 +1,4 @@
+# Learning git so this comment 
 list=[4,5,3,89,70,34,56]
 print(sorted(list))
 print(sorted(list,reverse=True))
